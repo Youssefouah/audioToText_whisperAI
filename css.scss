@@ -1,0 +1,90 @@
+html * {
+    box-sizing: border-box;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .upload {
+    &__box {
+      padding: 40px;
+    }
+    &__inputfile {
+      width: .1px;
+      height: .1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    
+    &__btn {
+      display: inline-block;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      min-width: 116px;
+      padding: 5px;
+      transition: all .3s ease;
+      cursor: pointer;
+      border: 2px solid;
+      background-color: #4045ba;
+      border-color: #4045ba;
+      border-radius: 10px;
+      line-height: 26px;
+      font-size: 14px;
+      
+      &:hover {
+        background-color: unset;
+        color: #4045ba;
+        transition: all .3s ease;
+      }
+      
+      &-box {
+        margin-bottom: 10px;
+      }
+    }
+    
+    &__img {
+      &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+      }
+      
+      &-box {
+        width: 200px;
+        padding: 0 10px;
+        margin-bottom: 12px;
+      }
+      
+      &-close {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          text-align: center;
+          line-height: 24px;
+          z-index: 1;
+          cursor: pointer;
+  
+          &:after {
+            content: '\2716';
+            font-size: 14px;
+            color: white;
+          }
+        }
+    }
+  }
+  
+  .img-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100%;
+  }

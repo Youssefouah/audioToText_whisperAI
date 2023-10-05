@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Speech To Text</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="upload__box">
+        <div id="uploadbtn" class="upload__btn-box">
+          <label class="upload__btn">
+            <p>Load audio</p>
+            <input type="file" data-max_length="1" class="upload__inputfile">
+          </label>
+        </div>
+      </div>
+      <textarea
+          name="prompt"
+          id="textArea"
+          placeholder="Text will goes on here"
+        ></textarea>
+    </div>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
